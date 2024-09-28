@@ -91,5 +91,5 @@ def upsert_services_to_pinecone(results):
         }])
 
 def get_relevant_document(query):
-    from pinecone_client import return_relevant_document_from_pinecone
-    return return_relevant_document_from_pinecone(query)
+    from pinecone_client import get_service_recommendation
+    return get_service_recommendation(query)
