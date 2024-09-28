@@ -14,8 +14,8 @@ This project is designed to provide service recommendations for Rwandan companie
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/quicksupport-agent.git
-    cd quicksupport-agent
+    git clone https://github.com/nshimiyimanaamani/AI-irembo-project.git
+    cd AI-irembo-project
     ```
 
 2. Create and activate a virtual environment:
