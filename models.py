@@ -1,9 +1,5 @@
 import warnings
-
-# Suppress the FutureWarning related to clean_up_tokenization_spaces
-warnings.filterwarnings("ignore", category=FutureWarning)
-
 from sentence_transformers import SentenceTransformer
 
-# Initialize the model
+warnings.filterwarnings("ignore", category=FutureWarning)
 model = SentenceTransformer('all-MiniLM-L6-v2')
