@@ -15,5 +15,6 @@ def recommend_service():
     return jsonify({'recommended_service': relevant_document})
 
 if __name__ == '__main__':
-    process_services()
+    # process_services()
+    print("Starting the server")
     app.run(debug=True)

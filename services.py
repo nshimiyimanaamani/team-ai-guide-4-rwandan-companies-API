@@ -73,9 +73,9 @@ def save_service_results(results):
     with open('service_results.json', 'w') as outfile:
         json.dump(results, outfile, indent=4)
 
-# Upsert the services data into Pinecone
+
 def upsert_services_to_pinecone(results):
-    index = ensure_index_exists()  # Call the index creation function once
+    index = ensure_index_exists() 
     
     for service in results:
         description = service['description']
@@ -90,7 +90,6 @@ def upsert_services_to_pinecone(results):
             }
         }])
 
-# Fetch the relevant document from Pinecone based on a query
 def get_relevant_document(query):
     from pinecone_client import return_relevant_document_from_pinecone
     return return_relevant_document_from_pinecone(query)
