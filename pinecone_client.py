@@ -49,7 +49,7 @@ def get_service_recommendation(user_input):
                 "content": prompt.format(user_input=user_input, relevant_document=relevant_document)
             }
         ],
-        model="llama-3.1-70b-versatile",
+        model="llama3-8b-8192",
     )
 
     return chat_completion.choices[0].message.content.replace('\n', ' ').replace('\\', '').strip()
